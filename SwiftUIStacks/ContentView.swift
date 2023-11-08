@@ -25,6 +25,7 @@ struct ContentView: View {
                        
                     BadgeLabelView(badgeText: "Perfect for teams with 20 members", offsetY: 110)
                 }
+            Spacer()
         }.padding(20)
     }
 }
@@ -37,12 +38,15 @@ struct ContentView_Previews: PreviewProvider {
 
 struct HeaderView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            Text("Choose")
-            Text("Your Plan")
-        }.font(.system(.largeTitle, design: .rounded, weight: .black))
-            .shadow(radius: 4)
+        HStack {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Choose")
+                Text("Your Plan")
+            }.font(.system(.largeTitle, design: .rounded, weight: .black))
+                .shadow(radius: 4)
+            Spacer()
             .padding()
+        }
     }
 }
 
