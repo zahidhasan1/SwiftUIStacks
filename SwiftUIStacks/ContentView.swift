@@ -11,7 +11,6 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HeaderView()
-            VStack(spacing: 20){
                 HStack(spacing: 20){
                     PricingView(title: "Basic", price: "$9", textColor: .white, bgColor: .purple)
                     ZStack {
@@ -21,10 +20,11 @@ struct ContentView: View {
                 }
                 
                 ZStack {
-                    TeamPricingView()
-                    BadgeLabelView(badgeText: "Perfect for teams with 20 members", offsetY: 125)
+                    PricingView(title: "Team", price: "$299", textColor: .white, bgColor: Color(red: 62/255, green: 63/255, blue: 70/255), icon: "wand.and.rays")
+                        .padding(.top)
+                       
+                    BadgeLabelView(badgeText: "Perfect for teams with 20 members", offsetY: 110)
                 }
-            }
         }.padding(20)
     }
 }
@@ -51,9 +51,16 @@ struct PricingView: View {
     var price: String
     var textColor: Color
     var bgColor: Color
+    var icon: String?
     
     var body: some View {
         VStack{
+            if let icon = icon{
+                Image(systemName: icon)
+                    .font(.largeTitle)
+                    .foregroundColor(textColor)
+            }
+            
             Text(title)
                 .font(.system(.title, design: .rounded))
                 .fontWeight(.black)
