@@ -19,6 +19,7 @@
 		C091AFCC2AFBBAA500C7E496 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C091AFCE2AFBBAA500C7E496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C091AFD12AFBBAA500C7E496 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C091AFD82AFBF1A300C7E496 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				C091AFCC2AFBBAA500C7E496 /* ContentView.swift */,
 				C091AFCE2AFBBAA500C7E496 /* Assets.xcassets */,
 				C091AFD02AFBBAA500C7E496 /* Preview Content */,
+				C091AFD82AFBF1A300C7E496 /* README.md */,
 			);
 			path = SwiftUIStacks;
 			sourceTree = "<group>";
